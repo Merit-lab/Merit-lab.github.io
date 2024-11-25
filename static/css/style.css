@@ -1,0 +1,286 @@
+/* footer css */
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+}
+
+main {
+  width: 100%;
+  background-color: #fff;
+}
+
+section {
+  max-width: 1430px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#main_img,
+.news {
+  padding: 0 217px;
+}
+
+#main_img {
+  max-width: 1000px;
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+
+#main_img img {
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+}
+
+#about {
+  max-width: 1000px;
+  width: 100%;
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.main_label p {
+  font-size: 12px;
+  color: #000;
+  width: 133px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ddd;
+}
+
+#about .main_title h3 {
+  font-family: "Playfair", serif;
+  color: #000;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+#about .main_title span {
+  font-weight: 300;
+}
+
+#about .content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+#about .content p {
+  font-size: 16px;
+  color: #0b1e21;
+  font-weight: 500;
+}
+
+#about .content p:nth-child(2) {
+  font-size: 16px;
+  color: #6c7e81;
+  font-weight: 400;
+}
+
+#news {
+  background-color: #f8f8f8;
+  max-width: 1920px;
+  width: 100%;
+}
+
+#news .news_wrapper {
+  max-width: 1000px;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+#news .news_wrapper ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #6c7e81;
+  font-size: 18px;
+}
+
+#news .news_wrapper ul li:first-child a {
+  color: #2c3137;
+}
+
+#news .news_wrapper ul li a {
+  color: #6c7e81;
+}
+
+#news .news_wrapper ul li a:hover {
+  color: #2c3137;
+}
+
+#gallery {
+  padding: 60px 0;
+}
+
+#gallery .gallery_wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+#gallery .gallery_img_wrapper {
+  max-width: 1430px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+#gallery .gallery_img_wrapper a {
+  width: auto;
+  height: 238px;
+}
+
+#gallery .gallery_img_wrapper a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* scroll */
+#scroll {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.logo_group {
+  display: flex;
+  column-gap: 20px;
+  width: 100%;
+}
+.logo_img {
+  flex-shrink: 0;
+  width: 200px;
+  height: 60px;
+  border: 1px solid tomato;
+}
+
+.logo_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* member css */
+#member {
+  max-width: 1000px;
+  width: 100%;
+  height: 1000px;
+  padding: 80px 0;
+}
+
+.sub_title {
+  font-family: "Playfair", serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.tabs {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs label {
+  display: inline-block;
+  cursor: pointer;
+  color: #989898;
+  width: auto;
+  background: #fff;
+  text-align: center;
+  line-height: 3em;
+  font-size: 16px;
+  margin-right: 25px;
+}
+
+.tabs label:last-of-type {
+  border-bottom: none;
+  margin-right: 0;
+}
+
+#tab1:checked + label,
+#tab2:checked + label,
+#tab3:checked + label,
+#tab4:checked + label {
+  color: #000;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px;
+  color: #000;
+  border: 1px solid tomato;
+}
+
+.tab-content-wrapper {
+  background: #fff;
+  color: #fff;
+  margin-top: 80px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* 각 탭이 체크되면 해당 콘텐츠만 표시 */
+#tab1:checked ~ .tab-content-wrapper #tab-content-1,
+#tab2:checked ~ .tab-content-wrapper #tab-content-2,
+#tab3:checked ~ .tab-content-wrapper #tab-content-3,
+#tab4:checked ~ .tab-content-wrapper #tab-content-4 {
+  display: block; /* 해당 탭 콘텐츠만 보이도록 설정 */
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #f3f3f6;
+}
+
+.f_wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.f_wrapper .f_info {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.f_wrapper .f_info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+
+.f_wrapper .f_info p:nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.f_wrapper .copyright span {
+  font-size: 11px;
+  color: #787778;
+  font-weight: 400;
+}
