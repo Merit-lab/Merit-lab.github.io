@@ -16,12 +16,11 @@ header {
 
 /* LOGO */
 header .logo {
-	color: #000;
-	height: 50px;
-	line-height: 50px;
-	font-size: 24px;
-	float: left;
-	font-weight: bold;
+	width: 123px;
+    height: 37px;
+    background-image: url('/static/img/merit_logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Dropdown Nav */
@@ -62,7 +61,9 @@ header nav ul li ul {
 	left: 0;
 	background: #fff;
 	display: none;
-	border-top: 2px solid red
+	border-top: 2px solid #F43F5E;
+    box-shadow: 0px 4px 15px #0000001a;
+    border-radius: 2px;
 }
 
 header nav ul li.active ul {
