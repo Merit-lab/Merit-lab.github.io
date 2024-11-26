@@ -141,3 +141,9 @@ a{
 *{
     font-family: "Pretendard"
 }
+
+:root{
+    /* color */
+    --main-color :#F43F5E;
+    --main-text : #212121;
+}
