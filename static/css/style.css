@@ -189,6 +189,7 @@ section {
   text-align: center;
 }
 
+/* member */
 /* tab style */
 
 .tabs {
@@ -620,3 +621,55 @@ section {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
+
+/* 반응형 */
+
+@media (max-width: 991px) {
+  #member{
+    padding: 40px 20px;
+  }
+  #research{
+    padding: 40px 20px;
+  }
+  #publications{
+    padding: 40px 20px;
+  }
+  .sub_title{
+    font-size: 30px;
+  }
+  /* tab */
+  .tab-content-wrapper{
+    padding: 0 20px;
+    margin: 30px 0 30px 0;
+  }
+  .tab-content .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tab-content .profile .profile-info .name-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tab-content .profile .profile-info .contact p{
+    white-space: no-wrap;
+  }
+  .tabs label{
+    font-size: 14px;
+  }
+  /* research */
+  .tab-content .research_inner .setence{
+    font-size: 16px;
+    line-height: 23px;
+  }
+  /* Publications */
+  #publications .content_wrap{
+    padding-left: 0;
+  }
+  #publications .content_wrap .content p{
+    font-size: 15px;
+  }
+  #publications .content_wrap .content .tag{
+    font-size: 14px;
+  }
+
+  }

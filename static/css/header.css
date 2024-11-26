@@ -21,6 +21,7 @@ header .logo {
   background-image: url("/static/img/merit_logo.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Dropdown Nav */
@@ -101,7 +102,56 @@ header nav ul li a.active {
   display: none;
 }
 
-/* Media Queries */
+/* footer */
+footer {
+  width: 100%;
+  background-color: #f3f3f6;
+}
+
+.f_wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.f_wrapper .f_info {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.f_wrapper .f_info div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.f_wrapper .f_info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+
+.f_wrapper .f_info p:nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.f_wrapper .copyright span {
+  font-size: 11px;
+  color: #787778;
+  font-weight: 400;
+}
+
+/* 반응형 */
 @media (max-width: 991px) {
   header {
     padding: 0 20px;
@@ -143,47 +193,19 @@ header nav ul li a.active {
   header nav ul li ul li {
     width: 100%;
   }
-}
-
-/* footer */
-footer {
-  width: 100%;
-  background-color: #f3f3f6;
-}
-
-.f_wrapper {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.f_wrapper .f_info {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.f_wrapper .f_info p {
-  font-size: 14px;
-  font-weight: 400;
-  color: #1e1e1e;
-}
-
-.f_wrapper .f_info p:nth-child(1) {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1e1e1e;
-}
-
-.f_wrapper .copyright span {
-  font-size: 11px;
-  color: #787778;
-  font-weight: 400;
+  header .logo {
+    width: 123px;
+    height: 25px;
+  }
+  .f_wrapper{
+    padding: 40px 40px;
+  }
+  .f_wrapper .f_info{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .f_wrapper .f_info p{
+    font-size: 14px !important;
+  }
 }
