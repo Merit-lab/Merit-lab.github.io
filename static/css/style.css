@@ -9,10 +9,10 @@ section {
   margin: 0 auto;
 }
 
-#main_img,
+/* #main_img,
 .news {
   padding: 0 217px;
-}
+} */
 
 #main_img {
   max-width: 1000px;
@@ -64,7 +64,8 @@ section {
 #about .content p {
   font-size: 16px;
   color: #0b1e21;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 #about .content p:nth-child(2) {
@@ -628,7 +629,7 @@ section {
 #depth_news{
   max-width: 1000px;
   width: 100%;
-  height: 2000px;
+  /* height: 2000px; */
   padding: 80px 0;
 }
 
@@ -658,6 +659,12 @@ section {
 
 
 /* 리스트 스타일 */
+
+#depth_news .content_wrap .news_wrap h5{
+  padding: 30px 0 10px 0;
+  font-size: 22px;
+  font-weight: 500;
+}
 #depth_news .content_wrap ul {
   perspective: 900px;
   padding: 0;
@@ -696,38 +703,95 @@ section {
   max-height: 0;
   opacity: 0;
   transform: translate(0, 50%);
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s linear;
   overflow: hidden;
   margin-top: 0;
 }
-#depth_news .content_wrap ul li:last-of-type {
-  padding-bottom: 0;
+#depth_news .content_wrap ul li .content .tag{
+  padding: 7px 11px 6px 11px;
+  border: 1px solid #E5E5E5;
+  color: #8E8E8E;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  font-size: 14px;
+
 }
+#depth_news .content_wrap ul li .content .title{
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--main-text);
+  padding: 13px 0 25px 0;
+  border-bottom: 1px solid #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#depth_news .content_wrap ul li .content .title .date{
+  font-size: 14px;
+  color: #7F7F7F;
+  font-weight: 400;
+}
+#depth_news .content_wrap ul li .content .detail{
+  padding: 30px 20px; 
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#depth_news .content_wrap ul li .content .detail p{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-text);
+  text-align: center;
+  word-break: keep-all;
+  line-height: 1.4;
+}
+
+#depth_news .content_wrap ul li .content .detail .img_2_horizontal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#depth_news .content_wrap ul li .content .detail .img_2_horizontal > img{
+  width: 100%;
+}
+
 
 #depth_news .content_wrap ul li i {
   position: absolute;
-  transform: translate(-6px, 0);
-  margin-top: 16px;
+  margin-top: 6px;
   right: 0;
-}
-
-#depth_news .content_wrap ul li i:before,
-ul li i:after {
-  content: "";
+  width: 17px; /* 아이콘 크기 */
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /* 아이콘 크기 */
+  color: var(--main-color); /* 아이콘 색상 */
   transition: all 0.25s ease-in-out;
-  position: absolute;
-  background-color: var(--main-color);
-  width: 3px;
-  height: 9px;
 }
 
-#depth_news .content_wrap ul li i:before {
-  transform: translate(-2px, 0) rotate(45deg);
+#depth_news .content_wrap ul li input[type="checkbox"]:checked ~ i {
+  content: ""; /* 기본 텍스트 제거 */
 }
 
-#depth_news .content_wrap ul li i:after {
-  transform: translate(2px, 0) rotate(-45deg);
+#depth_news .content_wrap ul li input[type="checkbox"]:checked ~ i::before {
+  font-family: "Font Awesome 5 Free"; /* FontAwesome 폰트 패밀리 */
+  content: "\f068"; /* FontAwesome 마이너스 아이콘 (fa-minus) */
+  font-weight: 900; /* 굵기 */
 }
+
+#depth_news .content_wrap ul li i::before {
+  font-family: "Font Awesome 5 Free"; /* FontAwesome 폰트 패밀리 */
+  content: "\f067"; /* FontAwesome 플러스 아이콘 (fa-plus) */
+  font-weight: 900; /* 굵기 */
+}
+
 
 #depth_news .content_wrap ul li input[type="checkbox"] {
   position: absolute;
@@ -741,15 +805,17 @@ ul li i:after {
 }
 
 #depth_news .content_wrap ul li input[type="checkbox"]:checked ~ .content {
-  max-height: 800px; /* 원래 높이 */
+  background-color: #FCFCFC;
+  padding: 30px;
+  max-height: 4000px; /* 원래 높이 */
   opacity: 1;
   transform: translate(0, 0);
   margin-top: 14px;
-  overflow: visible;
+  overflow-y: scroll;
 }
 
-#depth_news .content_wrap ul li input[type="checkbox"]:checked ~ i:before {
-  transform: translate(2px, 0) rotate(45deg);
+#depth_news .content_wrap ul li input[type="checkbox"]:checked ~ .title_wrap .title h2 {
+  color: var(--main-color);
 }
 
 #depth_news .content_wrap ul li input[type="checkbox"]:checked ~ i:after {
@@ -840,6 +906,28 @@ ul li i:after {
     flex-direction: row;
     border-left: none;
     padding: 10px 0;
+  }
+  /* news */
+  #depth_news .content_wrap{
+    padding-left: 0;
+  }
+  #depth_news .content_wrap ul li{
+      padding: 20px 0;
+  }
+  #depth_news .content_wrap ul li input[type="checkbox"]:checked ~ .content{
+    padding: 15px;
+  }
+  #depth_news .content_wrap ul li .title_wrap .title{
+    font-size: 16px;
+  }
+  #depth_news .content_wrap ul li .title_wrap .tag{
+    font-size: 13px;
+  }
+  #depth_news .content_wrap ul li .content .title{
+    font-size: 20px;
+  }
+  #depth_news .content_wrap ul li .content .detail p{
+    font-size: 14px;
   }
 
   }
