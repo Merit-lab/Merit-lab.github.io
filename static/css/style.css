@@ -703,8 +703,8 @@ section {
 #depth_news .content_wrap ul li .content {
   max-height: 0;
   opacity: 0;
-  transform: translate(0, 50%);
-  transition: all 0.3s linear;
+  /* transform: translate(0, 50%); */
+  /* transition: all 0.3s linear; */
   overflow: hidden;
   margin-top: 0;
 }
