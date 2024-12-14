@@ -9,11 +9,6 @@ section {
   margin: 0 auto;
 }
 
-/* #main_img,
-.news {
-  padding: 0 217px;
-} */
-
 #main_img {
   max-width: 1000px;
   width: 100%;
@@ -22,8 +17,9 @@ section {
 }
 
 #main_img img {
-  width: auto;
-  height: 350px;
+  max-width: 780px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -88,7 +84,9 @@ section {
   justify-content: flex-end;
   margin: 0 auto;
 }
-
+#news .news_wrapper .news_list_wrapper{
+  margin-top: 30px;
+}
 #news .news_wrapper ul li {
   padding: 20px 0;
   border-bottom: 1px solid #6c7e81;
@@ -875,6 +873,101 @@ section {
   letter-spacing: -0.5px;
 }
 
+/* photo-detail */
+
+#depth_photo{
+  max-width: 1000px;
+  width: 100%;
+}
+
+#depth_photo .photo_detail_wrap{
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+#depth_photo .photo_detail_wrap .title{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+#depth_photo .photo_detail_wrap .title p{
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main-text);
+}
+
+#depth_photo .photo_detail_wrap .title span{
+  font-size: 16px;
+  font-weight: 300;
+  color: #6B7280;
+}
+
+#depth_photo .photo_detail_wrap .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+#depth_photo .photo_detail_wrap .content .one-img{
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#depth_photo .photo_detail_wrap .content .one-img img{
+  max-width: 741px;
+  height: 442px;
+  width: 100%;
+  object-fit: cover;
+}
+#depth_photo .photo_detail_wrap .content .one-img .explanation{
+  font-size: 14px;
+  color: #6B7280;
+}
+
+#depth_photo .photo_detail_wrap .content p{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--main-text);
+  margin: 80px 0;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 850px;
+  width: 100%;
+}
+
+#depth_photo .photo_detail_wrap .content .two-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 900px;
+  width: 100%;
+}
+
+#depth_photo .photo_detail_wrap .content .two-img  div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#depth_photo .photo_detail_wrap .content .two-img img{
+  width: 100%;
+  height: 315px;
+  object-fit: cover;
+}
+
+#depth_photo .photo_detail_wrap .content .two-img .explanation{
+  font-size: 14px;
+  color: #6B7280;
+}
+
 
 /* 애니메이션 */
 @keyframes flipdown {
@@ -904,16 +997,57 @@ section {
 /* 반응형 */
 
 @media (max-width: 991px) {
+  
   #member, #research, #publications, #depth_news{
     padding: 40px 20px;
+  }
+  /* home */
+  #about{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+  #about .main_title h3{
+    font-size: 60px;
+  }
+  #about .content p{
+    font-size: 14px;
+  }
+  #about .content p:nth-child(2) {
+    font-size: 14px;
+  }
+  #news .news_wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+  #news .news_wrapper ul li{
+    font-size: 15px;
+  }
+  #news .news_wrapper ul li a{
+    line-height: 1.3;
+  }
+
+  #gallery{
+    padding: 60px 10px;
+  }
+
+  #gallery .gallery_img_wrapper{
+    gap: 10px;
+  }
+  #gallery .gallery_img_wrapper a{
+    height: 158px;
   }
 
   .sub_title{
     font-size: 30px;
   }
   /* tab */
+  .tab-content{
+    padding: 0;
+  }
   .tab-content-wrapper{
-    padding: 0 20px;
+    padding: 0 0px;
     margin: 30px 0 30px 0;
   }
   .tab-content .profile {
@@ -942,12 +1076,16 @@ section {
   #publications .content_wrap{
     padding-left: 0;
   }
+  #publications .content_wrap .content{
+    gap: 10px;
+  }
   #publications .content_wrap .content p{
     font-size: 15px;
   }
   #publications .content_wrap .content .tag{
     font-size: 14px;
   }
+
   .sub_tab{
     position: inherit;
     align-items: center;
@@ -962,8 +1100,13 @@ section {
     padding: 10px 0;
   }
   /* news */
+
+  #depth_news .inner{
+    padding: 40px 0;
+  }
   #depth_news .content_wrap{
     padding-left: 0;
+    margin-top: 0px;
   }
   #depth_news .content_wrap ul li{
       padding: 20px 0;
@@ -982,6 +1125,25 @@ section {
   }
   #depth_news .content_wrap ul li .content .detail p{
     font-size: 14px;
+  }
+
+  /* photo */
+  .photowrap{
+    gap: 7px;
+  }
+  .photowrap .container .box .thumbnail{
+   width: auto; 
+  }
+  .photowrap .container .box .title{
+    font-size: 15px;
+    margin: 15px 0 5px 0;
+  }
+  .photowrap .container .box .date{
+    font-size: 12px;
+  }
+  #depth_photo .photo_detail_wrap .content .two-img{
+    grid-template-columns: 1fr;
+    grid-area: 20px;
   }
 
   }
