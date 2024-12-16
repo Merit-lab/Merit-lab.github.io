@@ -1059,7 +1059,7 @@ section {
     align-items: flex-start;
   }
   .tab-content .profile .profile-info .contact p{
-    white-space: no-wrap;
+    line-height: 1.3;
   }
   .tabs label{
     font-size: 14px;
@@ -1129,7 +1129,8 @@ section {
 
   /* photo */
   .photowrap{
-    gap: 7px;
+    gap: 40px;
+    grid-template-columns: 1fr;
   }
   .photowrap .container .box .thumbnail{
    width: auto; 
@@ -1144,6 +1145,40 @@ section {
   #depth_photo .photo_detail_wrap .content .two-img{
     grid-template-columns: 1fr;
     grid-area: 20px;
+  }
+  .p-t-80{
+        padding-top: 50px;
+  }
+  .collaborators_inner h5{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .collaborators_inner{
+    padding: 30px 20px;
+  }
+  .collaborators_inner .logo_wrap{
+    padding: 30px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .collaborators_inner p{
+    font-size: 14px;
+  }
+  #publications .content_wrap .yearbox .title_wrap{
+    flex-direction: column;
+  }
+  #publications .content_wrap .yearbox h3{
+    margin-top: 30px;
+  }
+  #publications .content_wrap .yearbox .title_wrap .title{
+    display: flex;
+    align-items: flex-start;
+  }
+  #depth_news .content_wrap .news_wrap h5{
+    padding: 60px 0 10px 0;
+  }
+  .collaborators_inner .logo_box .img_wrap{
+    width: 100%;
   }
 
   }
