@@ -85,6 +85,7 @@ section {
 }
 #news .news_wrapper .news_list_wrapper{
   margin-top: 30px;
+  width: 100%;
 }
 #news .news_wrapper ul li {
   padding: 20px 0;
