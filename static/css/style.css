@@ -81,7 +81,6 @@ section {
   width: 100%;
   padding: 50px 0;
   display: flex;
-  justify-content: flex-end;
   margin: 0 auto;
 }
 #news .news_wrapper .news_list_wrapper{
