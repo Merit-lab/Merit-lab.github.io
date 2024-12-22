@@ -4,7 +4,7 @@ main {
 }
 
 section {
-  max-width: 1430px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -28,7 +28,7 @@ section {
   width: 100%;
   padding: 80px 0;
   display: grid;
-  grid-template-columns: 0.5fr 1.5fr 1.5fr;
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
@@ -44,7 +44,7 @@ section {
   font-family: "Playfair", serif;
   color: #000;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 70px;
 }
 
 #about .main_title span {
@@ -117,16 +117,16 @@ section {
 }
 
 #gallery .gallery_img_wrapper {
-  max-width: 1430px;
+  max-width: 1000px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 10px;
 }
 
 #gallery .gallery_img_wrapper a {
   width: auto;
-  height: 238px;
+  height: 200px;
 }
 
 #gallery .gallery_img_wrapper a img {
