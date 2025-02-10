@@ -159,13 +159,13 @@ footer {
 
 @media (max-width: 1300px) {
   header {
-    padding: 0 20px;
+    padding: 0 10px 0 0;
   }
 }
 /* 반응형 */
 @media (max-width: 991px) {
   header {
-    padding: 0 20px;
+    padding: 0 10px 0 0;
   }
 
   .menu-toggle {

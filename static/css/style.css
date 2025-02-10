@@ -10,14 +10,14 @@ section {
 }
 
 #main_img {
-  max-width: 1000px;
+  max-width: 1920px;
   width: 100%;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   text-align: center;
 }
 
 #main_img img {
-  max-width: 780px;
+  max-width: 1920px;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -804,7 +804,7 @@ section {
 }
 
 #depth_news .content_wrap ul li input[type="checkbox"]:checked ~ .content {
-  background-color: #FCFCFC;
+  background-color: #f8f8f8;
   padding: 30px;
   max-height: 4000px; /* 원래 높이 */
   opacity: 1;
@@ -1056,6 +1056,12 @@ section {
   
   #member, #research, #publications, #depth_news, #contact{
     padding: 40px 20px;
+  }
+  #main_img{
+    height: 230px;
+  }
+  #main_img > img{
+    height: 100%;
   }
   /* home */
   #about{
