@@ -20,6 +20,7 @@ header {
 
 /* LOGO */
 header .logo {
+  min-width: 100px;
   width: 123px;
   height: 37px;
   background-image: url("/static/img/merit_logo.png");
@@ -156,6 +157,11 @@ footer {
   font-weight: 400;
 }
 
+@media (max-width: 1300px) {
+  header {
+    padding: 0 20px;
+  }
+}
 /* 반응형 */
 @media (max-width: 991px) {
   header {

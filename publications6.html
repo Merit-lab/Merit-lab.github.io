@@ -39,49 +39,8 @@
     />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="/index.html"></a>
-      </div>
-
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-
-          <li class="sub-menu">
-            <a href="#">Members</a>
-            <ul>
-              <li><a href="./member.html">Ph.D</a></li>
-              <li><a href="./member.html">M.S</a></li>
-              <li><a href="#">B.S</a></li>
-              <li><a href="#">B.S</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#">Research</a></li>
-
-          <li><a href="#">Publications</a></li>
-
-          <li class="sub-menu">
-            <a href="#">News</a>
-            <ul>
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
-              <li><a href="#">Link 4</a></li>
-            </ul>
-          </li>
-
-          <li><a href="./photo.html">Photos</a></li>
-          <li><a href="#">Collaborators</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
-    </header>
-   <section id="publications">
+    <header></header>
+    <section id="publications">
         <h2 class="sub_title">Awards</h2>
         <div class="inner">
             <div class="sub_tab">
@@ -364,6 +323,11 @@
           this.classList.add('active');
         });
       });
+    </script>
+    <script>
+        $(function () {
+            $("header").load("header.html");
+        });
     </script>
   </body>
 </html>
