@@ -1046,5 +1046,26 @@
             $("header").load("header.html");
         });
     </script>
+
+
+
+    <script>
+      function updateTabFromHash() {
+        let hash = window.location.hash;
+        if (hash) {
+          let tab = document.querySelector(hash);
+          if (tab) {
+            tab.checked = true;
+          }
+        }
+      }
+
+      // 페이지 로드 시 실행
+      window.onload = updateTabFromHash;
+
+      // 해시가 변경될 때도 실행 (즉, 같은 페이지 내에서 탭 클릭 시 적용됨)
+      window.addEventListener("hashchange", updateTabFromHash);
+    </script>
+
   </body>
 </html>
