@@ -564,8 +564,7 @@ section {
 #publications .content_wrap .yearbox h3{
   font-size: 40px;
   font-family: "Playfair", serif;
-  text-align: right;
-  color: #0000002e;
+  color: #000000;
 }
 
 #publications .content_wrap .yearbox .title_wrap{
