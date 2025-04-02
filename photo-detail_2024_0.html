@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <!-- favicon -->
+    <link rel="icon" href="/static/favicon/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- js -->
+    <script src="/static/js/header.js"></script>
+    <!-- 제이쿼리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- header -->
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header></header>
+    <section id="depth_photo">
+      <div class="photo_detail_wrap">
+        <div class="title">
+            <p>2024 졸업식<p>
+            <span>Feb. 20, Bucheon</span>
+        </div>
+        <div class="content">
+            <div class="one-img">
+                <img src="/static/img/photos/2024/Graduate/photos_2024_graduate2.jpg">
+                <span class="explanation"></span>
+            </div>
+            <p> <b style="font-weight:700;">2월 20일에는 학위수여식이 진행되었습니다! 저희 MERIT Lab에서도 첫 졸업자가 생겼습니다!! 👏👏👏</b> </p>
+            <div class="one-img">
+              <img src="/static/img/photos/2024/Graduate/photos_2024_graduate3.jpg">
+              <span class="explanation"></span>
+          </div>
+            <p> <b style="font-weight:700;">그 주인공은 강효주 연구생 입니다!! <br>
+            짧은 기간이었지만 많은 업적을 남기고 간 그녀의 앞으로의 행보를 응원합니다! 👏👏</b></p>
+            <div class="one-img">
+              <img src="/static/img/photos/2024/Graduate/photos_2024_graduate4.jpg">
+              <span class="explanation"></span>
+              <p> <b style="font-weight:700;">다시 한번 졸업 축하드립니다! 🎓</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="f_wrapper">
+        <div class="f_info">
+          <p>MERIT 연구실</p>
+          <div>
+            <p>대표: 권순재 교수</p>
+            <p>경기도 부천시 원미구 지봉로 43</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <span
+            >© MICRO Electronics based on Remarkable Integrated circuits
+            Technology. ALL RIGHTS RESERVED.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $("nav").toggleClass("active");
+        });
+
+        $("ul li").click(function () {
+          $(this).siblings().removeClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".yearmenu").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".yearmenu")
+            .forEach((link) => link.classList.remove("active"));
+
+          this.classList.add("active");
+        });
+      });
+    </script>
+    <script>
+        $(function () {
+            $("header").load("header.html");
+        });
+    </script>
+  </body>
+</html>
