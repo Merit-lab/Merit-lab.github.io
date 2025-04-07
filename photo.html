@@ -84,7 +84,7 @@
           </div>
         </div>
         <div class="content_wrap">
-          <div id="photo2025">
+          <div id="photo2025" class="photobox">
             <h3 class="photo_year_title">2025</h3>
             <div class="photowrap">
               <div class="container">
@@ -148,7 +148,7 @@
             </div>  
           </div>
 
-          <div id="photo2024">
+          <div id="photo2024" class="photobox">
             <h3 class="photo_year_title">2024</h3>
             <div class="photowrap">
               <div class="container">
@@ -240,7 +240,7 @@
             </div>
           </div>
 
-          <div id="photo2023">
+          <div id="photo2023" class="photobox">
             <h3 class="photo_year_title">2023</h3>
             <div class="photowrap"> 
               <div class="container">
@@ -323,6 +323,32 @@
         </div>
       </div>
     </footer>
+    <script>
+    const sections = document.querySelectorAll('.photobox');
+    const menuLinks = document.querySelectorAll('.yearmenu');
+
+    window.addEventListener('scroll', () => {
+    let currentId = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const scrollY = window.pageYOffset;
+      const windowHeight = window.innerHeight;
+
+      if (scrollY + windowHeight / 2 >= sectionTop) {
+        currentId = section.getAttribute('id');
+      }
+    });
+
+    menuLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentId}`) {
+        link.classList.add('active');
+      }
+    });
+    });
+    </script>
     <script>
       $(document).ready(function () {
         $(".menu-toggle").click(function () {
