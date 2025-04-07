@@ -206,6 +206,32 @@
       </div>
     </footer>
     <script>
+    const sections = document.querySelectorAll('.yearbox');
+    const menuLinks = document.querySelectorAll('.yearmenu');
+
+    window.addEventListener('scroll', () => {
+    let currentId = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const scrollY = window.pageYOffset;
+      const windowHeight = window.innerHeight;
+
+      if (scrollY + windowHeight / 2 >= sectionTop) {
+        currentId = section.getAttribute('id');
+      }
+    });
+
+    menuLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentId}`) {
+        link.classList.add('active');
+      }
+    });
+    });
+    </script>
+    <script>
       $(document).ready(function () {
         $(".menu-toggle").click(function () {
           $("nav").toggleClass("active");
