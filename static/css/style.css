@@ -55,6 +55,7 @@ section {
 }
 
 #about .content {
+  font-size: 23px;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -62,12 +63,18 @@ section {
 
 #about .content p {
   font-size: 16px;
-  color: #0b1e21;
+  color: #6c7e81;
   font-weight: 400;
   line-height: 1.4;
 }
 
 #about .content p:nth-child(2) {
+  font-size: 16px;
+  color: #0b1e21;
+  font-weight: 400;
+}
+
+#about .content p:nth-child(3) {
   font-size: 16px;
   color: #0b1e21;
   font-weight: 400;
