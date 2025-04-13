@@ -11,6 +11,9 @@ section {
   width: 100%;
   margin: 0 auto;
 }
+.quotes_left{
+  margin-right: -3px;
+}
 
 #main_img {
   max-width: 1920px;
