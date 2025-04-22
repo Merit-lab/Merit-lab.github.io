@@ -7,9 +7,9 @@ header {
   left: 0; */
   padding: 0 100px;
   background: #fff;
-  width: 100%;
+  width: 95%;
   box-sizing: border-box;
-  height: 60px;
+  height: 60px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
