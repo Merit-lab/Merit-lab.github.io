@@ -5,9 +5,11 @@ header {
   /* position: absolute;
   top: 0;
   left: 0; */
-  padding: 0 100px;
+  padding: 0 50px;
   background: #fff;
-  width: 95%;
+  max-width: 50000px;
+  margin: 0 auto;
+  width: 100%;
   box-sizing: border-box;
   height: 60px; 
   display: flex;
