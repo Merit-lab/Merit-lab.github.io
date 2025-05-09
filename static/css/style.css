@@ -194,7 +194,7 @@ section {
 }
 
 .sub_title {
-  font-family: "Playfair", serif;
+  font-family: "Roboto", serif;
   color: #000;
   font-weight: 400;
   font-size: 40px;
@@ -598,7 +598,7 @@ section {
 }
 
 #publications .content_wrap .yearbox .title_wrap .title p{
-  font-family: "Playfair", serif;
+  font-family: "Roboto", serif;
   color: var(--main-text); 
   font-size: 30px;
   font-weight: 400;
