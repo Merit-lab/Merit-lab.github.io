@@ -933,7 +933,7 @@ section {
 }
 
 #depth_photo .photo_detail_wrap .content .one-img img{
-  max-width: 741px;
+  max-width: 1500px;
   height: 700px;
   width: 100%;
   object-fit: cover;

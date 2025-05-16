@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <!-- favicon -->
+    <link rel="icon" href="/static/favicon/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- js -->
+    <script src="/static/js/header.js"></script>
+    <!-- 제이쿼리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- header -->
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header></header>
+    <section id="depth_photo">
+      <div class="photo_detail_wrap">
+        <div class="title">
+            <p>2025 스승의 날 행사</p>
+            <span>May. 15, Bucheon</span>
+        </div>
+        <div class="content">
+          <p> <b style="font-weight:700;"> 5월 15일의 스승의 날을 맞아, 교수님께 감사한 마음을 깜짝 선물로 전달했습니다! 🎉🎉 <br> 연구실 인원 모두가 십시일반 모아 선물을 준비했습니다! 🥳</b> </p>
+            
+          <p> <b style="font-weight:700;">이제 연구실 인원이 많아져, 모두가 모이기는 어려웠지만, 참석한 연구생도 참석 못한 연구생도 모두 감사의 말씀을 드립니다. </b></p>
+          <div class="one-img">
+            <img src="/static/img/photos/2025/Teacher's_Day/photos_2025_teacher's_day4.png">
+            <span class="explanation"></span>
+            <p> <b style="font-weight:700;">교수님께서 자리에 안 계셔서 모두 함께 하고자 하는 마음을 사진에 담아보았어요~~ 교수님 저희가 사랑하는거 알죠?? 😉</b></p>
+          <div class="two-img">
+            <div>
+              <img src="/static/img/photos/2025/Teacher's_Day/photos_2025_teacher's_day2.jpg">
+              <span class="explanation">대학원생들 + 현수</span>
+            </div>
+            <div>
+              <img src="/static/img/photos/2025/Teacher's_Day/photos_2025_teacher's_day3.jpg">
+              <span class="explanation">학부 연구생들</span>
+            </div>
+         </div>
+          <p> <b style="font-weight:700;">앞으로도 모두 화이팅 입니다! 💪💪💪</b></p>
+          <div class="one-img">
+            <img src="/static/img/photos/2025/Teacher's_Day/photos_2025_teacher's_day1.jpg">
+            <span class="explanation"></span>
+         </div>
+          <p> <b style="font-weight:900;"> 교수님 사랑합니다 💕💕</b></p>
+         </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <footer>
+      <div class="f_wrapper">
+        <div class="f_info">
+          <p>MERIT Lab</p>
+          <p>Contact : Prof. Soon-jae Kweon (sj.kweon@catholic.ac.kr)</p>
+          <p>43 Jibong-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do</p>
+        </div>
+        <div class="copyright">
+          <span
+            >© MicroElectronics based on Remarkable Integrated circuits
+            Technology. ALL RIGHTS RESERVED.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $("nav").toggleClass("active");
+        });
+
+        $("ul li").click(function () {
+          $(this).siblings().removeClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".yearmenu").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".yearmenu")
+            .forEach((link) => link.classList.remove("active"));
+
+          this.classList.add("active");
+        });
+      });
+    </script>
+    <script>
+        $(function () {
+            $("header").load("header.html");
+        });
+    </script>
+  </body>
+</html>
