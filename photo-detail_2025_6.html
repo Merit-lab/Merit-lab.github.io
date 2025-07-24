@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <!-- favicon -->
+    <link rel="icon" href="/static/favicon/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- js -->
+    <script src="/static/js/header.js"></script>
+    <!-- 제이쿼리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- header -->
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header></header>
+    <section id="depth_photo">
+      <div class="photo_detail_wrap">
+        <div class="title">
+            <p>2025 대한전기학회 하계종합학술대회 발표</p>
+            <span>July. 17, Busan</span>
+        </div>
+        <div class="content">
+          <div class="one-img">
+            <img src="/static/img/photos/2025/KIEE/photos_2025_KIEE1.png">
+            <span class="explanation"></span>
+            <p> <b style="font-weight:700;">7월 16일부터 20일까지는 부산 BEXCO 에서 대한전기학회 하계종합학술대회가 열렸습니다!🎉🎉</b></p>
+            <p> <b style="font-weight:700;">이번 하계종합학술대회에서는 <b style="font-weight:1000;">이철현</b> 석사과정과 <b style="font-weight:1000;">김현수</b> 학부연구생이 각각 논문을 제출하고, 발표를 진행했습니다!</b></p>
+          <div class="two-img">
+            <div>
+              <img src="/static/img/photos/2025/KIEE/photos_2025_KIEE3.jpg">
+              <span class="explanation">이철현 석사과정</span>
+            </div>
+            <div>
+              <img src="/static/img/photos/2025/KIEE/photos_2025_KIEE2.jpg">
+              <span class="explanation">김현수 학부연구생</span>
+            </div>
+         </div>
+          <p> <b style="font-weight:700;">이철현 석사과정 학생은 구두 발표로, 김현수 학부연구생은 포스터 발표로 각각 발표를 진행했습니다 🥳</b></p>
+          <p> <b style="font-weight:700;">아쉽게도 둘 다 수상에는 실패했지만, 두 분 모두 좋은 경험이 되었을 것이라 생각합니다!<br>고생 많으셨어요👊</b></p>
+          <div class="one-img">
+            <img src="/static/img/photos/2025/KIEE/photos_2025_KIEE4.png">
+            <span class="explanation"></span>
+         </div>
+          <p> <b style="font-weight:700;"> 마지막으로, 요즘 유행하는 지브리 스타일 사진의 김현수 학생으로 마무리~ 👉</b></p>
+          <p> <b style="font-weight:900;"> MERIT LAB 화이팅! 👊👊👊</b></p>
+         </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <footer>
+      <div class="f_wrapper">
+        <div class="f_info">
+          <p>MERIT Lab</p>
+          <p>Contact : Prof. Soon-jae Kweon (sj.kweon@catholic.ac.kr)</p>
+          <p>43 Jibong-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do</p>
+        </div>
+        <div class="copyright">
+          <span
+            >© MicroElectronics based on Remarkable Integrated circuits
+            Technology. ALL RIGHTS RESERVED.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $("nav").toggleClass("active");
+        });
+
+        $("ul li").click(function () {
+          $(this).siblings().removeClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".yearmenu").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".yearmenu")
+            .forEach((link) => link.classList.remove("active"));
+
+          this.classList.add("active");
+        });
+      });
+    </script>
+    <script>
+        $(function () {
+            $("header").load("header.html");
+        });
+    </script>
+  </body>
+</html>
