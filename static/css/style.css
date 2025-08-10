@@ -702,6 +702,10 @@ section {
   border-radius: 20px;
   font-size: 14px;
   color: #8E8E8E;
+  width: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #depth_news .content_wrap ul li .title_wrap .title{
