@@ -776,6 +776,16 @@ section {
   width: 100%;
 }
 
+#depth_news .content_wrap ul li .content .detail .img_3_horizontal{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+#depth_news .content_wrap ul li .content .detail .img_3_horizontal > img{
+  width: 100%;
+}
+
 
 #depth_news .content_wrap ul li i {
   position: absolute;
@@ -1048,6 +1058,12 @@ section {
 #depth_photo .photo_detail_wrap .content .two-img .explanation{
   font-size: 14px;
   color: #6B7280;
+}
+
+#depth_photo .photo_detail_wrap .content .three-img img{
+  width: 100%;
+  height: 380%;
+  object-fit: cover;
 }
 
 #contact{
