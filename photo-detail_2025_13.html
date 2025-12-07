@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <!-- favicon -->
+    <link rel="icon" href="/static/favicon/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- js -->
+    <script src="/static/js/header.js"></script>
+    <!-- 제이쿼리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- header -->
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header></header>
+    <section id="depth_photo">
+      <div class="photo_detail_wrap">
+        <div class="title">
+            <p>2025 전남대학교 IDEC 스마트 회로설계 챌린지 🥈</p>
+            <span>September, 21 </span>
+        </div>
+        <div class="content">
+          <div class="one-img">
+            <img src="/static/img/photos/2025/JNU_IDEC/photos_2025_JNU_IDEC0.jpg">
+            <span class="explanation"></span>
+          </div>
+          <p><b style="font-weight:700;">11월 21일 전남대학교 IDEC 에서 주관하는 스마트 회로설계 챌린지에 MERIT Lab 연구생 들이 참여를 하였습니다! </b> 🎉</p>
+          <p><b style="font-weight:700;">참여 팀의 팀명은 릴랙스 라이트 팀이며, 구성원으로는 <b style="font-weight:700">김이안, 정재원, 최다혜</b> 연구생이며, 은상을 수상하였습니다!!</b> 🥈</p>
+
+          <div class="one-img">
+            <img src="/static/img/photos/2025/JNU_IDEC/photos_2025_JNU_IDEC1.jpg">
+            <span class="explanation">릴랙스 라이트: 김이안, 정재원, 최다혜</span>
+          </div>
+          <p><b style="font-weight:700;">대회에 출전하여 수상하기 까지 많은 노력들을 한 연구생들에게 고생했다는 말과 잘 해줘서 고맙다는 말을 전합니다!</b>😊<br></p>
+          <p><b style="font-weight:700;">MERIT Lab 화이팅!</b>😍</p>
+         </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <footer>
+      <div class="f_wrapper">
+        <div class="f_info">
+          <p>MERIT Lab</p>
+          <p>Contact : Prof. Soon-jae Kweon (sj.kweon@catholic.ac.kr)</p>
+          <p>43 Jibong-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do</p>
+        </div>
+        <div class="copyright">
+          <span
+            >© MicroElectronics based on Remarkable Integrated circuits
+            Technology. ALL RIGHTS RESERVED.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $("nav").toggleClass("active");
+        });
+
+        $("ul li").click(function () {
+          $(this).siblings().removeClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".yearmenu").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".yearmenu")
+            .forEach((link) => link.classList.remove("active"));
+
+          this.classList.add("active");
+        });
+      });
+    </script>
+    <script>
+        $(function () {
+            $("header").load("header.html");
+        });
+    </script>
+  </body>
+</html>
