@@ -44,59 +44,42 @@
         <h2 class="sub_title">Biomedical IC and Systems </h2>
         <div class="tabs">
             <input type="radio" name="tab" id="tab1" checked="checked" />
-            <label for="tab1">Project1</label>
-  
-            <input type="radio" name="tab" id="tab2" />
-            <label for="tab2">Project2</label>
-
-            <input type="radio" name="tab" id="tab3" />
-            <label for="tab3">Project3</label>
-
+            <label for="tab1">Sleep-status Monitoring Earable System Based on Multi-modal IC</label>
 
             <div class="tab-content-wrapper">
               <div id="tab-content-1" class="tab-content">
                 <div class="research_inner">
                     <p class="setence">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      Traditional sleep monitoring systems are often bulky and uncomfortable, disrupting the very sleep they aim to measure. 
+                      Our laboratory is pioneering a completely unobtrusive "Earable" (ear-wearable) platform, the SynHear System, designed for continuous, clinical-grade sleep-status monitoring. 
+                      By integrating a custom-designed multi-modal integrated circuit (IC) with advanced edge AI, 
+                      we capture and process a comprehensive suite of vital signs—including EEG, ECG, PPG, temperature, and motion—directly from the ear and surrounding areas.
                     </p>
-                    <img class="research_img" src="/static/img/reseach/research_ex.png">
+                    <img class="research_img" src="/static/img/reseach/research_SSME1.png">
                     <p class="setence">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      The core of our hardware innovation is a multi-channel, reconfigurable Analog Front-End (AFE) IC, which was successfully taped-out in late 2025 and fabbed-out in early 2026. 
+                      Measuring physiological signals from the ear presents extreme challenges due to signal attenuation and motion artifacts. 
+                      To address this, our IC features high input impedance and a wide dynamic range, enabling the acquisition of micro-volt level biological signals, such as precise 120μV intact ECG signals from the ear. 
+                      Furthermore, it incorporates robust artifact cancellation through an Analog RC Integrator equipped with Motion Artifact Tracking Logic and a Baseline Reset Trigger. 
+                      This innovation completely resolves the conventional issue of ECG signal loss during subject movement, ensuring continuous, unbroken data streams. 
+                      The system also integrates FPGA and MCU components for the real-time processing of EEG patterns, successfully detecting phenomena like the Berger Effect—alpha wave power shifts between eyes open and closed states—with high fidelity.
                     </p>
-                    <img class="research_img" src="/static/img/reseach/research_ex.png">
+                    <img class="research_img" src="/static/img/reseach/research_SSME2.png">
                     <p class="setence">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      Hardware excellence is paired with sophisticated software intelligence. 
+                      The continuous data streams acquired by our multi-modal sensors are wirelessly transmitted via BLE and processed using stacked LSTM and Capsule Network architectures. 
+                      Our deep learning models are optimized for continuous physiological time-series data, achieving an outstanding 85.75% accuracy in classifying light sleep stages over full 8-hour sleep cycles. 
+                      This translates raw auditory and neural metrics into actionable health intelligence.
                     </p>
-                </div>
-              </div>
-              <div id="tab-content-2" class="tab-content">
-                <div class="research_inner">
-                  <img class="research_img" src="/static/img/reseach/research_ex.png">
-                  <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <img class="research_img" src="/static/img/reseach/research_ex.png">
-                  <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-              </div>
-              </div>
-              <div id="tab-content-3" class="tab-content">
-                <div class="research_inner">
-                  <img class="research_img" src="/static/img/reseach/research_ex.png">
-                  <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <img class="research_img" src="/static/img/reseach/research_ex.png">
-                  <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
+                    <img class="research_img" src="/static/img/reseach/research_SSME3.png">
+                    <p class="setence">
+                      To bridge the gap between engineering and clinical practice, our research is validated through strong interdisciplinary partnerships. 
+                      For clinical translation, we collaborate closely with the Catholic University of Korea Eunpyeong St. Mary’s Hospital. 
+                      Here, we conduct rigorous in vivo subject testing to correlate our earable data with standard clinical polysomnography metrics. 
+                      Concurrently, through joint development with global institutions, notably New York University Abu Dhabi (NYUAD), we are actively expanding the system's form factors. 
+                      This global collaboration focuses on developing diverse wearable applications, such as the 'Night Patch' and Master/Slave e-tattoos, to directly target and diagnose complex sleep disorders like sleep apnea. 
+                      By unifying ultra-low-power IC design, deep learning, and clinical medicine, we are establishing a new paradigm for non-invasive, daily-wearable healthcare monitoring.
+                    </p>
                 </div>
               </div>
             </div>

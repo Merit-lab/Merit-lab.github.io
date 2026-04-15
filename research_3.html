@@ -44,39 +44,57 @@
         <h2 class="sub_title">Wireless Power Transfer System Deisgn & Energy Harvesting Power Management Circuit</h2>
         <div class="tabs">
             <input type="radio" name="tab" id="tab1" checked="checked" />
-            <label for="tab1">Wireless Power Transfer System Design</label>
+            <label for="tab1">AI-Driven Automated Coil Co-optimization for WPT</label>
   
             <input type="radio" name="tab" id="tab2" />
-            <label for="tab2">Project2</label>
+            <label for="tab2">In-vivo Application of Hybrid WPT and Energy Harvesting Systems</label>
 
             <div class="tab-content-wrapper">
               <div id="tab-content-1" class="tab-content">
                 <div class="research_inner">
                     <p class="setence">
-                      Wireless Power Transfer (WPT) is a technology that enables the transmission of electrical energy without physical wires, utilizing electromagnetic fields to enhance the convenience and efficiency of device charging. While WPT finds applications in various domains such as smartphones, electric vehicles, and IoT devices, its transformative potential is particularly evident in the biomedical field.
+                      Designing Wireless Power Transfer (WPT) coils for implantable medical devices requires balancing stringent physical constraints with optimal electrical performance. 
+                      Our laboratory has developed an advanced iterative co-optimization framework that systematically bridges geometrical parameter sweeping with system-level electrical performance evaluations.
                     </p>
                     <img class="research_img" src="/static/img/reseach/research_WPT2.png">
                     <p class="setence">
-                      In biomedical applications, implantable medical devices (IMDs) such as pacemakers, neurostimulators, and insulin pumps play a critical role in sustaining patients’ lives and improving their quality of life. However, these devices often rely on batteries with limited lifespans, necessitating invasive surgeries for replacement, which impose significant physical and emotional burdens on patients.
+                      The core of our methodology is an automated loop driven by Physics-Informed Neural Networks (PINNs). 
+                      The process begins with user-defined specifications, including maximum Rx outer diameter, resonance frequency, coil distance, and tissue properties.
+                      We perform comprehensive geometric sweeps across both Tx and Rx coils—varying parameters 
+                      such as outer diameter (<span style="display:inline-block; transform:skewX(-15deg);">Dₒᵤₜ</span>), 
+                      trace width (<span style="display:inline-block; transform:skewX(-15deg);">w</span>), spacing (<span style="display:inline-block; transform:skewX(-15deg);">s</span>), 
+                      and number of turns (<span style="display:inline-block; transform:skewX(-15deg);">N</span>).
+                      Traditional analytical models often fall short in complex biological environments. 
+                      To overcome this, our PINN-enhanced models—pre-trained on extensive simulation and experimental data—refine the calculation of 
+                      fundamental electrical parameters (<span style="display:inline-block; transform:skewX(-15deg);">L, R, C, k</span>) 
+                      and accurately predict tissue-induced parasitic effects (<span style="display:inline-block; transform:skewX(-15deg);">Cₜᵢₛₛᵤₑ</span> and <span style="display:inline-block; transform:skewX(-15deg);">Rₜᵢₛₛᵤₑ</span>).
                     </p>
-                    <img class="research_img" src="/static/img/reseach/research_WPT1.png">
                     <p class="setence">
-                      Wireless power transfer addresses these challenges by providing a reliable and continuous power supply to IMDs, reducing battery dependency, minimizing the need for surgical interventions, and enabling device miniaturization and biocompatibility. Moreover, WPT in biomedical applications must meet stringent medical standards for energy efficiency and safety while reducing risks such as infection, making it a pivotal technology for advancing healthcare innovation.
+                      Through this iterative loop, the refined parameters are continuously fed into system-level performance calculators. 
+                      Depending on the specific clinical requirement, our algorithm actively assesses and diverges into specialized optimization paths, 
+                      ultimately generating customized coil designs optimized for either maximum Power Transfer Efficiency (PTE) or maximum Power Delivered to the Load (PDL).
                     </p>
                 </div>
               </div>
               <div id="tab-content-2" class="tab-content">
                 <div class="research_inner">
-                  <img class="research_img" src="/static/img/reseach/research_ex.png">
                   <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    The clinical translation of electromedicine is frequently hindered by the surgical burden of replacing depleted batteries and the inherently large volume of conventional implantable devices. 
+                    Our research addresses this challenge by proposing a hybrid charging architecture that reduces the required battery volume by up to 80% while maintaining robust operational capability.
+                  </p>
+                  <img class="research_img" src="/static/img/reseach/research_WPT1.png">
+                  <p class="setence">
+                    To compensate for the reduced battery capacity, we integrate continuous internal Energy Harvesting (EH) with fast-charging WPT. 
+                    While in vivo EH technologies like Triboelectric Nanogenerators (TENG) and Magnetoelastic Generators (MEG) provide a continuous power source, 
+                    they are limited by low output power (requiring hours to days for charging). We resolve this limitation by seamlessly incorporating our optimized WPT system, 
+                    which is capable of delivering high power for rapid charging within minutes.
                   </p>
                   <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <img class="research_img" src="/static/img/reseach/research_ex.png">
-                  <p class="setence">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    The core of this application is our custom-designed Power Management Integrated Circuit (PMIC). 
+                    The system architecture features a smart selection circuit that efficiently manages multiple rectified inputs (TEEH, MEEH, and WPT), 
+                    routing stable power to the central controller and battery.
+                    To validate clinical feasibility, our fully fabricated charge systems—including the Tx/Rx coils and PMIC—are rigorously evaluated through in vivo charging tests utilizing murine models. 
+                    These tests confirm not only the rapid voltage charging curves of the supercapacitors and batteries but also ensure strict adherence to thermal safety limits during active power transfer.
                   </p>
               </div>
               </div>
