@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos | MERIT Lab</title>
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="icon" href="/static/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header></header>
+    
+    <section id="depth_photo">
+      <div class="photo_detail_wrap">
+        <div class="title">
+            <p>2026 MERIT Lab 봄 MT 🏠</p>
+            <span>May, 02</span>
+        </div>
+
+        <div class="content">
+          <p><b style="font-weight:700;">2026년 5월, MERIT Lab 식구들과 함께 즐거운 봄 워크숍을 다녀왔습니다!</b></p>
+          
+          <div class="one-img">
+            <img src="/static/img/photos/2026/26MT/trip_group1.jpg"">
+            <span class="explanation">고즈넉한 한옥 숙소 앞에서 단체 사진! 📸</span>
+          </div>
+
+          <p><b style="font-weight:700;">멋진 한옥 숙소에서 공기도 마시고, 다 같이 시그니처 포즈도 취해보며 즐거운 시간을 보냈습니다. 😍</b></p>
+          
+          <div class="one-img">
+            <img src="/static/img/photos/2026/26MT/trip_group2.jpg">
+            <span class="explanation">MERIT Lab의 전매특허 포즈! ✌️</span>
+          </div>
+
+          <p><b style="font-weight:700;">워크숍의 꽃은 역시 바베큐 파티죠! 맛있는 음식을 먹으며 돈독해지는 시간이었습니다. 🍖</b></p>
+          <div class="one-img">
+            <img src="/static/img/photos/2026/26MT/trip_dinner.jpg">
+            <span class="explanation">교수님과 함께하는 즐거운 저녁 식사 시간</span>
+          </div>
+
+          <p><b style="font-weight:700;">우리는 모두 "행복한 학생"입니다! 연구도 노는 것도 열정적인 우리 팀원들 모두 화이팅! 🔥</b></p>
+          <div class="one-img">
+            <img src="/static/img/photos/2026/26MT/trip_back.jpg">
+            <span class="explanation">티셔츠 문구처럼 언제나 행복한 연구 생활이 되길 바랍니다.</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="f_wrapper">
+        <div class="f_info">
+          <p>MERIT Lab</p>
+          <p>Contact : Prof. Soon-jae Kweon (sj.kweon@catholic.ac.kr)</p>
+          <p>43 Jibong-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do</p>
+        </div>
+        <div class="copyright">
+          <span>© MicroElectronics based on Remarkable Integrated circuits Technology. ALL RIGHTS RESERVED.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        // 헤더 로드
+        $("header").load("header.html");
+
+        $(".menu-toggle").click(function () {
+          $("nav").toggleClass("active");
+        });
+
+        $("ul li").click(function () {
+          $(this).siblings().removeClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
