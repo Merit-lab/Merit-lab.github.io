@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos | MERIT Lab</title>
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="icon" href="/static/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header></header>
+    
+    <section id="depth_photo">
+      <div class="photo_detail_wrap">
+        <div class="title">
+            <p>3D Bioprinting of Clinically-Relevant Soft Tissues 세미나 진행 🎤 </p>
+            <span>July, 23</span>
+        </div>
+
+        <div class="content">
+          <p><b style="font-weight:700;">7월 23일, 가톨릭대학교 김수환관 K269에서 뉴욕대학교 아부다비(NYU Abu Dhabi)의 Vijayavenkataraman Sanjairaj 교수님을 모시고 "3D Bioprinting of Clinically-Relevant Soft Tissues"를 주제로 Distinguished Seminar가 개최되었습니다.</p>
+          <div class="one-img">
+              <div>
+                <img src="/static/img/photos/2026/ABSeminar/photos_ABSeminar_2.jpg">
+                <span class="explanation"></span>
+              </div>
+            </div>
+            <p><b style="font-weight:700;">Vijay 교수님은 NYU Abu Dhabi 기계공학·생명공학 조교수이자 The Vijay Lab의 디렉터로, 3D 바이오프린팅, 조직공학, 재생의학, 생체재료, 의료기기 분야를 연구하고 계십니다. 강연은 적층 제조(Additive Manufacturing)의 기본 개념을 짚어보는 것으로 시작되었습니다. </p>
+
+           <div class="two-img">
+              <div>
+                <img src="/static/img/photos/2026/ABSeminar/photos_ABSeminar_1.jpg">
+                <span class="explanation"></span>
+              </div>
+              <div>
+                <img src="/static/img/photos/2026/ABSeminar/photos_ABSeminar_0.jpg">
+                <span class="explanation"></span>
+              </div>
+            </div>
+
+            <p><b style="font-weight:700;">이어서 임상적으로 활용 가능한 연조직을 3D 바이오프린팅으로 구현하는 연구와 The Vijay Lab의 친환경 바이오잉크(Sustainable Eco Bioinks) 연구를 소개해 주셨습니다. 바이오프린팅과 조직공학 분야의 최신 연구를 가까이에서 접할 수 있는 뜻깊은 자리였습니다. </p>
+
+            <p><b style="font-weight:700;">본 세미나는 한국연구재단(NRF)과 정보통신기획평가원(IITP)의 지원을 받아 진행되었습니다. </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="f_wrapper">
+        <div class="f_info">
+          <p>MERIT Lab</p>
+          <p>Contact : Prof. Soon-jae Kweon (sj.kweon@catholic.ac.kr)</p>
+          <p>43 Jibong-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do</p>
+        </div>
+        <div class="copyright">
+          <span>© MicroElectronics based on Remarkable Integrated circuits Technology. ALL RIGHTS RESERVED.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        // 헤더 로드
+        $("header").load("header.html");
+
+        $(".menu-toggle").click(function () {
+          $("nav").toggleClass("active");
+        });
+
+        $("ul li").click(function () {
+          $(this).siblings().removeClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
